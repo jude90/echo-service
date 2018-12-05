@@ -14,4 +14,9 @@ public class EchoController {
     public String greet(@PathVariable("words") String words){
         return "Greeting !!! "+ words;
     }
+
+    @RequestMapping("/curse/{words}")
+    public String curse(@PathVariable("words") String words){
+        return "Fuck you ! Bloody Hell !!! "+ words;
+    }
 }
